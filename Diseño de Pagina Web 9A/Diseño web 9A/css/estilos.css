@@ -1,0 +1,122 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+    margin:0;
+    padding:0;
+}
+. principal{
+    width:90%;
+    max-width:1200px;
+    margin:0 auto;
+    overflow:hidden;
+ }
+body{
+    background:#d6314a;
+    color:#070704;
+    font-family:Calibri;
+}
+nav{
+    margin:10px auto;
+    width:100%;
+
+    background:#F00;
+}
+#btn-menu{
+    display: none;
+}
+
+header label{
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding:10px;
+    border-right: 1px solid #fff;
+}
+
+header label:hover{
+    cursor: pointer;
+    background: rgba(0.0,0,0.3);
+}
+
+.menu ul{
+    margin:0;
+    list-style:none;
+    padding:0;
+    display:flex;
+    flex-direction: row;
+}
+
+
+.menu li:hover{
+    background: rgba(0,0,0,0.3);
+}
+
+.menu li a{
+    display: block;
+    padding:15px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+header{
+    margin:10px auto;
+    width:100%;
+}
+
+.contenido{
+    width:50%;
+    padding:15px;
+    float:left;
+    background:#f0f03c;
+    box-sizing:border-box;
+}
+
+aside{
+    width:50%;
+    padding: 15px;
+    box-sizing:border-box;
+    background:#0F3;
+    float:left;
+
+
+}
+
+footer{
+    clear:both;
+    float:left;
+    margin-top:20px;
+    box-sizing:border-box;
+    width:100%;
+    padding:20px;
+    color:#fff;
+    background:##00293b;
+}
+
+@media screen and (max-width: 500px){
+    .contenido{
+        width:100%;
+        margin-top:70%;
+    }
+    aside{
+        width:100%;
+    }
+    .menu ul{
+    flex-direction: column;
+}
+
+#btn-menu:checked ~ .menu {
+    margin: 0;
+}
+.menu {
+    position: absolute;
+    background: #E9BF3A;
+    width: 90%;
+
+    transition: all 0.5s;
+}
+
+}
+@media screen and (max-width: 400px){
+    .contenido{
+        width:100%;
+    }
+}
